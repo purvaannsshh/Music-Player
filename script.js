@@ -69,7 +69,7 @@ const songDetails= [
 ]
 
 // Keep track of song
-let songIndex = 1;
+let songIndex = 0;
 
 // Initially load song details into DOM
 loadSong(songDetails[songIndex]);
