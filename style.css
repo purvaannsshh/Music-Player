@@ -5,11 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(
-    0deg,
-    rgb(200, 100, 20) 25%,
-    rgb(76, 5, 90) 75%
-  );
+  background-image: linear-gradient(0deg, rgb(23, 78, 124) 25%, rgb(95, 0, 140) 75%);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,10 +13,11 @@ body {
   justify-content: center;
   font-family: 'Lato', sans-serif;
   margin: 0;
+  transition: background-image 0.5s ease-in-out;
 }
 
 .music-container {
-  background-color: #333;
+  background-color: #222;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   display: flex;
@@ -28,6 +25,7 @@ body {
   position: relative;
   margin: 100px 0;
   z-index: 10;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .img-container {
@@ -37,7 +35,7 @@ body {
 
 .img-container::after {
   content: '';
-  background-color: #333;
+  background-color: #222;
   border-radius: 50%;
   position: absolute;
   bottom: 100%;
@@ -57,6 +55,7 @@ body {
   left: 0;
   animation: rotate 3s linear infinite;
   animation-play-state: paused;
+  transition: transform 0.3s ease-in-out;
 }
 
 .music-container.play .img-container img {
@@ -121,7 +120,7 @@ body {
   padding: 10px 10px 10px 150px;
   opacity: 0;
   transform: translateY(0%);
-  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   z-index: 0;
 }
 
@@ -141,6 +140,7 @@ body {
   margin: 10px 0;
   height: 4px;
   width: 100%;
+  transition: background 0.3s ease-in-out;
 }
 
 .progress {
