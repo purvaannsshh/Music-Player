@@ -13,7 +13,7 @@ const currTime = document.querySelector('#currTime');
 const durTime = document.querySelector('#durTime');
 
 // Song titles
-const songs = ['Cradles', 'Greedy', 'I wanna be yours', 'Lalkaara', 'Senorita', 'Shape of you'];
+const songs = ['Cradles', 'Greedy', 'I wanna be yours', 'Mood', 'Senorita', 'Shape of you', 'levitating' , 'On my way', 'Peaches' , 'Austraunaut'];
 
 const songDetails= [
 {
@@ -32,9 +32,9 @@ const songDetails= [
   image:"images/I wanna be yours.jpeg",
 },
 {
-  name: "Lalkaara",
-  src:"music/Lalkara.mp3",
-  image:"images/Lalkaara.jpg",
+  name: "Mood",
+  src:"music/Mood.mp3",
+  image:"images/24kGoldn_-_Mood.png",
 },
 {
   name: "Señorita",
@@ -45,6 +45,26 @@ const songDetails= [
   name: "Shape of you",
   src:"music/Shape of You .mp3",
   image:"images/Shape of you.jpg",
+},
+{
+  name:"Levitating",
+  src:"music/Levitating.mp3",
+  image:"images/levitating.jpg"
+},
+{
+  name:"Peaches",
+  src:"music/Peaches.mp3",
+  image:"images/default.jpg"
+},
+{
+  name:"On My Way",
+  src:"music/On my Way.mp3",
+  image:"images/On-My-Way-.jpg"
+},
+{
+  name:"Astronaut In The Ocean",
+  src:"music/Astronaut In The Ocean.mp3",
+  image:"images/astronaut.jpg"
 }
 ]
 
