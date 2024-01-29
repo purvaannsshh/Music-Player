@@ -223,3 +223,10 @@ audio.addEventListener('ended', nextSong);
 
 // Time of song
 audio.addEventListener('timeupdate', DurTime);
+
+// JavaScript code to add the "welcome" class after a delay (adjust the delay as needed)
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    document.querySelector('.music-player').classList.add('welcome');
+  }, 1000); // Add the class after 1000 milliseconds (adjust as needed)
+});
